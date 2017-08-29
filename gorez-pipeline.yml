@@ -1,0 +1,27 @@
+---
+resources:
+- name: resource-gorez-app
+  type: git
+  source:
+#    uri: https://github.com/cloudfoundry-community/simple-go-web-app.git
+    uri: https://github.com/goehmen/gorez.git
+
+- name: resource-deploy-gorez-app
+  type: cf
+  source:
+    api: {{cf-api}}
+    username: {{cf-username}}
+    password: {{cf-password}}
+    organization: {{cf-organization}}
+    space: {{cf-space}}
+    skip_cert_check: true
+
+jobs:
+- name: job-deploy-app
+  serial: true
+  plan:
+  - {get: resource-gorez-app, trigger: true}
+  - put: resource-deploy-gorez-app
+    params:
+      manifest: resource-gorez-app/manifest.yml
+      path: resource-gorez-app

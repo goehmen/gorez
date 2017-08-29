@@ -1,0 +1,6 @@
+---
+applications:
+- name: gregoehmen
+  disk: 256M
+  memory: 128M
+  buildpack: staticfile_buildpack
