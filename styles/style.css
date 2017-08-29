@@ -17,11 +17,11 @@ h2 {
 }
 
 p, li {
-  font-size: 50px;
+  font-size: 20px;
   line-height: 2;
   letter-spacing: 1px;
   color: teal;
-  text-align: center;
+  text-align: left;
 }
 
 body {
