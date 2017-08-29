@@ -20,7 +20,7 @@ p, li {
   font-size: 20px;
   line-height: 2;
   letter-spacing: 1px;
-  color: teal;
+  color: black;
   text-align: left;
 }
 
@@ -29,7 +29,7 @@ body {
   margin: 0 auto;
   background-color: #FFFFFF;
   padding: 70px 20px 20px 20px;
-  border: 5px solid red;
+  border: 3px solid black;
 }
 
 button {
