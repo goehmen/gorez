@@ -5,9 +5,11 @@ html {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 28px;
   text-align: center;
   color: black;
+  font-weight: 400;
+  word-spacing: 0.075ems;
 }
 
 h2 {
