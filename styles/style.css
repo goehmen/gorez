@@ -14,6 +14,8 @@ h2 {
   font-size: 20px;
   text-align: left;
   color: black;
+  font-weight: 400;
+  word-spacing: 0.075ems;
 }
 
 p, li {
