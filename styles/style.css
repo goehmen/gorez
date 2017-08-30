@@ -3,9 +3,11 @@
   padding: 0;
 }
 
+/*
 * { 
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
+*/
 
 html {
   font-size: 10px; /* px means 'pixels': the base font size is now 10 pixels high  */
@@ -63,5 +65,9 @@ img {
 
 .dates {
   float: right;
+}
+
+.indent {
+  margin-left: 15px ;
 }
 
