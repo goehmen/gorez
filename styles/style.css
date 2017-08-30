@@ -16,13 +16,13 @@ h2 {
   font-size: 20px;
   text-align: left;
   color: black;
-  font-weight: 400;
+  font-weight: bold;
   word-spacing: 0.075ems;
 }
 
 p, li {
   font-size: 20px;
-  line-height: 1.3;
+  line-height: 1.2;
   letter-spacing: 1px;
   color: black;
   text-align: left;
