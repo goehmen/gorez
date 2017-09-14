@@ -17,6 +17,7 @@ html {
 
 table {
     font-size 30px;
+    float: center;
     text-align: center;
     background-color: #d3d3d3;
     width: 750px;
