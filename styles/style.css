@@ -15,6 +15,14 @@ html {
   background-color: #00539F;
 }
 
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
 h1 {
   font-size: 28px;
   text-align: center;
