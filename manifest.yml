@@ -4,4 +4,3 @@ applications:
   disk: 256M
   memory: 512M
   buildpack: staticfile_buildpack
-  instances: 2
