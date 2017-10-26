@@ -1,7 +1,7 @@
 ---
 applications:
 - name: gregoehmen
-  disk: 256M
-  memory: 256M
+  disk: 128M
+  memory: 128M
   buildpack: staticfile_buildpack
   instances: 2
