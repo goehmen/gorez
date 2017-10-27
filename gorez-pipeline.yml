@@ -1,27 +1,20 @@
 ---
-resource_types:
-- name: cf-goehmen
-  type: docker-image
-  source:
-#    repository: mateod/cf-resource
-    repository: concourse/cf-resource
-
-
 resources:
 - name: resource-gorez-app
   type: git
   source:
+#    uri: https://github.com/cloudfoundry-community/simple-go-web-app.git
     uri: https://github.com/goehmen/gorez.git
 
 - name: resource-deploy-gorez-app
-  type: cf-goehmen
+  type: cf
   source:
     api: {{cf-api}}
-    organization: {{cf-organization}}
     username: {{cf-username}}
     password: {{cf-password}}
-    skip_cert_check: true
+    organization: {{cf-organization}}
     space: {{cf-space}}
+    skip_cert_check: true
 
 jobs:
 - name: job-deploy-app
