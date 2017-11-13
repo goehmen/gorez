@@ -79,6 +79,10 @@ img {
   width: 50px;  
 }
 
+.table-head {
+  40px;
+}
+
 .dates {
   float: right;
 }
