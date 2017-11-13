@@ -23,6 +23,12 @@ table {
     width: 750px;
 }
 
+table, th, td {
+  border 1px solid blue;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
 header, footer {
     padding: 1em;
     color: white;
@@ -77,10 +83,6 @@ img {
 .top-icons {
   float: left;
   width: 50px;  
-}
-
-.table-head {
-  font-weight: 400;
 }
 
 .dates {
