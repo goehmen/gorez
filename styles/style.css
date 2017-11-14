@@ -1,6 +1,6 @@
 * {
-  margin: 20;
-  padding: 0;
+  margin: 0;
+  padding: 20;
 }
 
 /*
@@ -84,7 +84,8 @@ img {
 
 .top-icons {
   float: left;
-  width: 50px;  
+  width: 30px;  
+  height: 30px;  
 }
 
 .dates {
