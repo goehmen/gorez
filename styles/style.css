@@ -5,36 +5,35 @@
 
 html {
   font-size: 10px; /* base font size is now 10 pixels high  */
-  font-family: Roboto;
-  background-color: #00539F;
+  font-family: Arial;
+  background-color: #006699;
 }
 
 table {
-  font-size 20px;
+  font-size: 20px;
   float: center;
-  text-align: center;
-  background-color: #00ece7;
-  width: 1000px;
+  background-color: #afbcc5;
+  width: 900px;
   padding: 25px;
-  border 5px solid #00539F;
+  padding-left: 75px;
+  margin-left: 50px;
+  padding-bottom: 35px;
+  border: 3px solid black;
   font-family: Arial, sans-serif;
-  color: #00539F; 
+  color: black; 
 }
 
 th {
-  border 1px solid #00539F;
   font-family: Arial, sans-serif;
-  font-size: 28px; 
-  color: #00539F; 
-  text-align: center;
-  border 2px solid #00539F;
+  font-size: 48px; 
+  padding-bottom: 30px;
 }
 
 td {
   font-family: Arial, sans-serif;
-  font-size: 28px; 
-  color: #00539F; 
-  text-align: center;
+  font-size: 24px; 
+  text-align: left;
+  padding-left: 100px;
 }
 
 header, footer {
@@ -42,7 +41,7 @@ header, footer {
   color: white;
   background-color: black;
   clear: left;
-  text-align: center;
+  text-align: left;
 }
 
 h1 {
@@ -51,7 +50,7 @@ h1 {
   color: black;
   font-weight: 400;
   word-spacing: 0.075ems;
-  padding: 25px 15px 25px 15px;
+  padding: 25px 25px 25px 25px;
 }
 
 h2 {
@@ -61,6 +60,7 @@ h2 {
   font-weight: bold;
   word-spacing: 0.075ems;
   display: inline;
+  padding-left: 25px;
 }
 
 h4 {
@@ -74,16 +74,16 @@ p, li {
   line-height: 1.2;
   letter-spacing: 1px;
   color: black;
-  text-align: left;
-  padding: 75px;
+  text-align: justify;
+  padding: 10px 75px;
 }
 
 body {
   width: 1000px;
   margin: 0 auto;
   background-color: #FFFFFF;
-  padding: 70px 20px 20px 20px;
-  border: 4px solid black;
+  padding: 50px 20px 20px 20px;
+  border: 3px solid black;
 }
 
 img {
@@ -93,15 +93,27 @@ img {
 
 .top-icons {
   float: left;
-  width: 30px;  
-  height: 30px;  
+  width: 40px;  
+  height: 40px;  
 }
 
 .dates {
   float: right;
+  padding-right:25px;
 }
 
 .indent {
   margin-left: 25px;
+}
+
+.job-head {
+  margin-top: 25px;
+  padding-top: 25px;
+}
+
+.objective {
+  font-size: 22px;
+  padding: 25px;
+  text-align: justify;
 }
 
