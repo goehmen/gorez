@@ -21,6 +21,7 @@ table {
     text-align: center;
     background-color: #ece700;
     width: 1000px;
+    padding: 100;
 }
 
 table, th, td {
