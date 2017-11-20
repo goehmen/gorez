@@ -16,24 +16,24 @@ table {
   background-color: #00ece7;
   width: 1000px;
   padding: 75px;
-  border 2px solid 00539F;
+  border 5px solid #00539F;
   font-family: Arial, sans-serif;
-  color: 00539F; 
+  color: #00539F; 
 }
 
 th {
-  border 1px solid 00539F;
+  border 1px solid #00539F;
   font-family: Arial, sans-serif;
   font-size: 28px; 
-  color: 00539F; 
+  color: #00539F; 
   text-align: center;
-  border 2px solid 00539F;
+  border 2px solid #00539F;
 }
 
 td {
   font-family: Arial, sans-serif;
   font-size: 28px; 
-  color: 00539F; 
+  color: #00539F; 
   text-align: center;
 }
 
