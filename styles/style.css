@@ -10,13 +10,13 @@ html {
 }
 
 table {
-    font-size 20px;
-    float: center;
-    text-align: center;
-    background-color: #00ece7;
-    width: 1000px;
-#    padding: 15px;
-    border 2px solid 00539F;
+  font-size 20px;
+  float: center;
+  text-align: center;
+  background-color: #00ece7;
+  width: 1000px;
+  padding: 15px;
+  border 2px solid 00539F;
 }
 
 table, th, td {
@@ -25,14 +25,15 @@ table, th, td {
   font-size: 28px; 
   color: 00539F; 
   text-align: center;
+  border 2px solid 00539F;
 }
 
 header, footer {
-    padding: 1em;
-    color: white;
-    background-color: black;
-    clear: left;
-    text-align: center;
+  padding: 1em;
+  color: white;
+  background-color: black;
+  clear: left;
+  text-align: center;
 }
 
 h1 {
