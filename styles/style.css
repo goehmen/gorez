@@ -15,17 +15,26 @@ table {
   text-align: center;
   background-color: #00ece7;
   width: 1000px;
-  padding: 15px;
+  padding: 75px;
   border 2px solid 00539F;
+  font-family: Arial, sans-serif;
+  color: 00539F; 
 }
 
-table, th, td {
+th {
   border 1px solid 00539F;
   font-family: Arial, sans-serif;
   font-size: 28px; 
   color: 00539F; 
   text-align: center;
   border 2px solid 00539F;
+}
+
+td {
+  font-family: Arial, sans-serif;
+  font-size: 28px; 
+  color: 00539F; 
+  text-align: center;
 }
 
 header, footer {
@@ -66,6 +75,7 @@ p, li {
   letter-spacing: 1px;
   color: black;
   text-align: left;
+  padding: 75px;
 }
 
 body {
@@ -74,11 +84,6 @@ body {
   background-color: #FFFFFF;
   padding: 70px 20px 20px 20px;
   border: 4px solid black;
-}
-
-button {
-  display: block;
-  margin: 0 auto;
 }
 
 img {
