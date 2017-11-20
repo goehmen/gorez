@@ -16,12 +16,12 @@ html {
 }
 
 table {
-    font-size 30px;
+    font-size 20px;
     float: center;
     text-align: center;
-    background-color: #ece700;
+    background-color: #00ece7;
     width: 1000px;
-    padding: 100;
+    padding: 15px;
 }
 
 table, th, td {
