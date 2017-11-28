@@ -5,7 +5,7 @@
 
 html {
   font-size: 10px; /* base font size is now 10 pixels high  */
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   background-color: #006699;
 }
 
@@ -15,7 +15,7 @@ table {
   background-color: #afbcc5;
   width: 900px;
   padding: 25px;
-  padding-left: 50px; #75
+  padding-left: 75px;
   margin-left: 50px;
   padding-bottom: 35px;
   border: 3px solid black;
@@ -31,9 +31,9 @@ th {
 
 td {
   font-family: Arial, sans-serif;
-  font-size: 24px; 
+  font-size: 18px; 
   text-align: left;
-  padding-left: 50px; #100
+  padding-left: 50px;
 }
 
 header, footer {
@@ -61,6 +61,16 @@ h2 {
   word-spacing: 0.075ems;
   display: inline;
   padding-left: 25px;
+}
+
+h3 {
+  font-size: 20px;
+  text-align: left;
+  color: black;
+  font-weight: bold;
+  word-spacing: 0.075ems;
+  display: inline;
+  padding-left: 50px;
 }
 
 h4 {
@@ -93,8 +103,8 @@ img {
 
 .top-icons {
   float: left;
-  width: 40px;  
-  height: 40px;  
+  width: 28px;  
+  height: 28px;  
 }
 
 .dates {
@@ -111,8 +121,16 @@ img {
   padding-top: 25px;
 }
 
+.special-td-right {
+  text-align: right;
+}
+
+.special-td-left {
+  text-align: left;
+}
+
 .objective {
-  font-size: 22px;
+  font-size: 24px;
   padding: 25px;
   text-align: justify;
 }
