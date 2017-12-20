@@ -1,9 +1,9 @@
 ---
 resource_types:
 - name: cf-goehmen
- type: docker-image
- source:
-   repository: concourse/cf-resource
+  type: docker-image
+  source:
+    repository: concourse/cf-resource
 
 - name: twitter
   type: docker-image
@@ -49,11 +49,7 @@ jobs:
     params:
       manifest: resource-gorez-app/manifest.yml
       path: resource-gorez-app
-
-- name: do-tweet
-  plan:
   - get: tweet-source
-    passed: [job-deploy-app]
   - put: tweet
     params:
       media:
