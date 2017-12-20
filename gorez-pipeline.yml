@@ -40,6 +40,15 @@ resources:
     space: {{cf-space}}
     skip_cert_check: true
 
+- name: version
+  type: semver
+  source:
+    driver: git
+    uri: https://github.com/goehmen/gorez.git
+    branch: version
+    file: version
+#    private_key: 
+
 jobs:
 - name: job-deploy-app
   serial: true
