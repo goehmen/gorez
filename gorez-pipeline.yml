@@ -1,10 +1,28 @@
 ---
+resource_types:
+- name: twitter
+  type: docker-image
+  source:
+    repository: ecsteam/twitter-concourse-resource
+
 resources:
 - name: resource-gorez-app
   type: git
   source:
-#    uri: https://github.com/cloudfoundry-community/simple-go-web-app.git
     uri: https://github.com/goehmen/gorez.git
+
+- name: tweet-source
+  type: git
+  source:
+    uri: https://github.com/goehmen/gorez.git
+
+- name: tweet
+  type: twitter
+  source:
+    consumer_key: {{twitter-consumer-key}}
+    consumer_secret: {{twitter-consumer-secret}}
+    access_token: {{twitter-access-token}}
+    access_token_secret: {{twitter-access-token-secret}}
 
 - name: resource-deploy-gorez-app
   type: cf
@@ -25,3 +43,14 @@ jobs:
     params:
       manifest: resource-gorez-app/manifest.yml
       path: resource-gorez-app
+
+- name: do-tweet
+  plan:
+  - get: tweet-source
+  - put: tweet
+    params:
+      media:
+      - tweet-source/images/GreenBuild.png
+      status: >
+        POW!!! Concourse deployed my app! (build ${BUILD_ID})
+        @concourseci  SNAP!!! 
