@@ -49,13 +49,15 @@ resources:
     secret_access_key: {{aws_secret_access_key}}
     bucket: {{version_aws_bucket}}
     region_name: us-east-1
-    key: resource-gorez-app/version
+    key: version
 
 jobs:
 - name: job-deploy-app
   serial: true
   plan:
   - {get: resource-gorez-app, trigger: true}
+  - get: version
+    params: {bump: patch}
   - put: resource-deploy-gorez-app
     params:
       manifest: resource-gorez-app/manifest.yml
@@ -68,3 +70,7 @@ jobs:
       status: >
         POW!!! Concourse deployed my app! (build ${BUILD_ID})
         @concourseci FTW 
+  - put: version
+    params:
+      file: version/number
+
