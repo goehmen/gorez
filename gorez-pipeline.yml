@@ -45,8 +45,8 @@ resources:
   source:
     driver: git
     uri: https://github.com/goehmen/gorez.git
-    branch: version
-    file: version
+    branch: /
+    file: version.txt
 #    private_key: 
 
 jobs:
