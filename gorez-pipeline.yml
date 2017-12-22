@@ -69,7 +69,6 @@ jobs:
       - tweet-source/images/GreenBuild.png
       status: >
         POW!!! Concourse deployed my app! (build ${BUILD_ID})
-        @concourseci FTW 
   - put: version
     params:
       file: version/number
