@@ -1,0 +1,157 @@
+ 2845  fly -t gorez login -c http://192.168.100.4:8080
+ 2846  fly -t gorez execute
+ 2847  fly -t gorez execute -c build.yml
+ 2849  fly -t gorez execute -c build.yml
+ 3149  fly set-pipeline -t tutorial -c gorez-pipeline.yml -p gorez --non-interactive -l ./.ci_secrets_dev
+ 3150  fly set-pipeline -t tutorial -c gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 3151  fly -t tutorial unpause-pipeline -p gorez
+ 3612  fly set-pipeline -t tutorial -c gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 4628  fly set-pipeline -t tutorial -c gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 4638  fly -t gorez login -c https://ci.goehmen.io:8080
+ 4639  fly -t gorez login -c https://ci.goehmen.io
+ 4640  fly -t gorez sync
+ 4641  fly set-pipeline -t tutorial -c gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 4642  fly set-pipeline -t ci.goehmen.io -c gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 4644  fly set-pipeline -t https://ci.goehmen.io -c gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 4645  fly set-pipeline -t gorez -c gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 4647  fly -t gorez ps
+ 4648  fly -t gorez up
+ 4649  fly -t gorez up -p gorez
+ 4650  fly -t gorez ps
+ 4652  fly -t gorez cr
+ 4653  fly -t gorez gp
+ 4654  fly -t gorez gp -p gorez
+ 4657  fly -t gorez logout
+ 4658  fly -t gorez login -c https://ci.goehmen.io
+ 4659  fly -t gorez check-resource --resource gorez/job-deploy-app
+ 4660  fly -t gorez check-resource --resource gorez/reaource-gorez-app
+ 4661  fly -t gorez check-resource --resource gorez/resource-gorez-app
+ 4662  fly -t gorez check-resource --resource gorez/resource-gorez-deploy-app
+ 4663  fly -t gorez check-resource --resource gorez/resource-deploy-gorez-app
+ 4728  fly -t gorez check-resource --resource gorez/resource-deploy-gorez-app
+ 4729  fly -t gorez login -c https://ci.goehmen.io
+ 4730  fly -t gorez help
+ 4732  fly set-pipeline -t gorez -c gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 4735  fly set-pipeline -t https://ci.goehmen.io -c gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 4736  fly set-pipeline -t https://ci.goehmen.io  gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 4737  fly set-pipeline -t https://ci.goehmen.io -c ./ gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 4739  fly set-pipeline -t https://ci.goehmen.io -c ./ gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 4740  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 4741  fly -t gorez up -p gorez
+ 4757  fly -t gorez 
+ 4758  fly -t gorez hijack
+ 4759  fly -t gorez hijack gorez
+ 4760  fly -t gorez hijack -h
+ 4761  fly -t gorez hijack -j=gorez
+ 4762  fly -t gorez hijack -j gorez
+ 4763  fly -t gorez hijack -j gorez/job-deploy-app
+ 4774  fly -t gorez hijack -j gorez/job-deploy-app
+ 4776  fly -t gorez hijack -j gorez/job-deploy-app
+ 4779  fly -t gorez hijack -j gorez/job-deploy-app
+ 4786  fly -t gorez hijack -j gorez/job-deploy-app
+ 4802  fly -t gorez hijack -j gorez/job-deploy-app
+ 4803  fly -t gorez sync
+ 4804  fly -t gorez hijack -j gorez/job-deploy-app
+ 4805  fly -t gorez login
+ 4806  fly -t gorez hijack -j gorez/job-deploy-app
+ 4815  fly -t gorez hijack -j gorez/job-deploy-app
+ 4825  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 4826  fly -t gorez login -c https://ci.goehmen.io
+ 4827  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 4829  fly -t gorez pipelines
+ 4830  fly -t gorez watch
+ 4833  fly -t gorez watch -j gorez/job-deploy-app
+ 4837  fly set-pipeline -t gorez -c ./gorez-pipeline.bak -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 4840  fly -t gorez login -c https://ci.goehmen.io
+ 4842  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 4870  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5076  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5082  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5083  fly -t gorez up -p gorez
+ 5216  fly -t gorez teams
+ 5217  fly -t gorez sync
+ 5218  fly -t gorez teams
+ 5219  fly -t gorez set-team jerry-app
+ 5220  fly -t gorez set-team --team-name jerry-app
+ 5221  fly -t gorez set-team jerry-app --basic-auth-username jerry --basic-auth-password m2FeFJNo 
+ 5222  fly -t gorez set-team -n jerry-app --basic-auth-username jerry --basic-auth-password m2FeFJNo 
+ 5223  fly -t gorez login
+ 5224  fly -t gorez teams
+ 5225  fly -t gorez set-team -n jerry-app --basic-auth-username jerry --basic-auth-password m2FeFJNo 
+ 5226  fly -t gorez teams
+ 5228  fly set-pipeline -t gorez -c ./jerry-app-pipeline.yml -p jerry-app --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5230  fly set-pipeline -t gorez -c ./jerry-app-pipeline.yml -p jerry-app --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5243  fly set-pipeline -t gorez -c ./jerry-app-pipeline.yml -p jerry-app --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5244  fly -t gorez up -p jerry-app
+ 5598  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5602  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5603  fly -t gorez login
+ 5604  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5609  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5612  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5614  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5616  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5618  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5620  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5622  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5626  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5628  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5636  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5668  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5670  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5672  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5674  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5705  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5707  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5709  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5711  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5713  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5715  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5735  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5737  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5739  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5741  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5745  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5752  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5756  fly -t gorez cr version
+ 5757  fly -t gorez cr -r version
+ 5758  fly -t gorez cr -r gorez/version
+ 5759  fly -t gorez cr -r gorez/cf
+ 5760  fly -t gorez cr -r gorez/cf=oehmen
+ 5761  fly -t gorez cr -r gorez/cf-oehmen
+ 5762  fly -t gorez ps
+ 5765  fly -r gorez/resource-deploy-gorez-app
+ 5766  fly cr -r gorez/resource-deploy-gorez-app
+ 5767  fly -t gorez cr -r gorez/resource-deploy-gorez-app
+ 5768  fly -t gorez cr -r gorez/twitter
+ 5769  fly -t gorez cr -r gorez/tweet
+ 5770  fly -t gorez cr -r gorez/tweet-source
+ 5771  fly -t gorez cr -r gorez/version
+ 5772  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5774  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5776  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5781  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5790  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5793  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5795  fly -t gorez cr -r gorez/version
+ 5798  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 5799  fly -t gorez cr -r gorez/version
+ 5889  fly -t gorez login
+ 5905  fly -t gorez login -c https://ci.goehmen.io
+ 5908  fly -t gorez login -c https://ci.goehmen.io
+ 6793  history|grep -i "fly -t gorez"
+ 6794  fly -t gorez cr -r gorez/twitter
+ 6795  fly -t gorez login -c https://ci.goehmen.io
+ 6799  fly -t gorez cr -r gorez/twitter
+ 6811  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 7176  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 7180  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 7182  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 7183  fly -t gorez login -c https://ci.goehmen.io
+ 7192  fly -t gorez ps
+ 9092  fly -t gorez ps
+ 9099  fly -t gorez ps
+ 9100  fly -t gorez login -c https://ci.goehmen.io
+ 9117  history|grep -i fly|grep -i gorez >fly-hist
+ 9123  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez --non-interactive -l ~/.ssh/.ci_secrets_dev
+ 9124  fly set-pipeline -t gorez -c ./gorez-pipeline.yml -p gorez up
