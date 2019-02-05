@@ -30,8 +30,8 @@ resources:
     access_token_secret: {{twitter-access-token-secret}}
 
 - name: resource-deploy-gorez-app
-#  type: cf-goehmen
-  type: cf
+  type: cf-goehmen
+#  type: cf
   source:
     api: {{cf-api}}
     username: {{cf-username}}
